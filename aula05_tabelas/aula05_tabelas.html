@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Tabela no HTML5</h1>
+    <table border="1">
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+            <td>Dado 4</td>
+        </tr>
+
+        <tr>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+            <td>Dado 7</td>
+            <td>Dado 8</td>
+        </tr>
+    </table>
+
+    <h3>Tabela com cabeçalho:</h3>
+    <table border="1">
+        <tr>
+            <th>
+                Produto
+            </th>
+            <th>
+                Preço
+            </th>
+
+            <td>Notebook</td>
+            <td>R$2.000,00</td>
+        </tr>
+    </table>
+    <h2> Tabela com título</h2>
+    <table border="1">
+        <caption>Tabela de preços</caption>
+        <tr>
+            <th>Serviço</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <th>Pintura residencial</th>
+            <th>R$2.500,00</th>
+        </tr>
+    </table>
+
+    <h1> Tabela com estrutura semântica</h1>
+    <table>
+        <caption>Vendas do mês</caption>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Mouse</td>
+                <td>10</td>
+                <td>R$ 20,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>R$ 200,00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h3> Tabela com atributo SCOPE:</h3>
+    <table border="1">
+        <caption>Notas dos alunos por disciplinas</caption>
+        <thead>
+            <tr>
+                <th>Aluno</th>
+                <th>Desenvolvimento Web</th>
+                <th>Banco de Dados</th>
+                <th>Algoritimos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Ana</th>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>7.0</td>
+                <td>8.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
