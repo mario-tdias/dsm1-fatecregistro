@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Pizza</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Bella Pizza</h1>
+    <nav>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>A melhor pizza da cidade 🍕</h2>
+
+    <!-- BOTÃO AGORA ABRE MODAL -->
+    <button class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#JanelaModal">
+        Peça agora
+    </button>
+</section>
+
+<div class="alert alert-warning text-center m-0">
+    Promoção: Frete grátis para pedidos acima de R$50!
+</div>
+
+<section id="cardapio" class="cardapio">
+    <div class="card">
+        <h3>Calabresa</h3>
+        <p>Molho, queijo e calabresa.</p>
+    </div>
+
+    <div class="card">
+        <h3>Margherita</h3>
+        <p>Molho, queijo, tomate e manjericão.</p>
+    </div>
+
+    <div class="card">
+        <h3>Frango com Catupiry</h3>
+        <p>Frango desfiado e catupiry.</p>
+    </div>
+
+    <div class="card">
+        <h3>Quatro Queijos</h3>
+        <p>Mussarela, parmesão, gorgonzola e provolone.</p>
+    </div>
+</section>
+
+<section id="sobre" class="sobre">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Pizza">
+    <div>
+        <h2>Sobre nós</h2>
+        <p>Na Bella Pizza, usamos ingredientes frescos e receitas tradicionais.</p>
+    </div>
+</section>
+
+<section id="contato" class="contato">
+    <div>
+        <h3>Endereço</h3>
+        <p>Rua das Pizzas, 123</p>
+    </div>
+
+    <div>
+        <h3>Telefone</h3>
+        <p>(11) 99999-9999</p>
+    </div>
+
+    <div>
+        <h3>Horário</h3>
+        <p>18h às 23h</p>
+    </div>
+</section>
+
+<!-- MODAL (o que você mandou) -->
+<div id="JanelaModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h1 class="modal-title">Faça seu pedido 🍕</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                Escolha sua pizza no cardápio e entre em contato pelo telefone!
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success" data-bs-dismiss="modal">Entendi</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Bella Pizza</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

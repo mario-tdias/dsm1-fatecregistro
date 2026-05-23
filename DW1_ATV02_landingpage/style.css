@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #c0392b;
+    color: white;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.hero {
+    margin-top: 80px;
+    height: 60vh;
+    background: #f4f4f4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.card {
+    background: #eee;
+    padding: 20px;
+    width: 200px;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.sobre img {
+    width: 300px;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardapio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .contato {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
